@@ -9,6 +9,36 @@
     <input id="number" type="number" placeholder="Введіть число від 1 до 100" />
     <button onclick="checkNumber()">Перевірити</button>
     <p id="result"></p>
+    <p id="timer"></p>
+
+
+<div id="game"></div>
+<div id="resul"></div>
+<style>
+  #game {
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  gap: 4px;
+  margin: 20px 0;
+  }
+
+  .cell {
+    width: 40px;
+    height: 40px;
+    background: #eee;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+
+  .cell.found {
+    background: #4caf50;
+  }
+
+  .cell.miss {
+    background: #ff5252;
+  }
+
+</style>
    <script src="script.js"></script>   
 </body>
 </html>
